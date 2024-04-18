@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images\PHOTOS-20240123T045342Z-001/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images\PHOTOS-20240123T045342Z-001/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images\PHOTOS-20240123T045342Z-001/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="images\PHOTOS-20240123T045342Z-001/site.webmanifest"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Enquire Satguru Apparels</title>
+
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <style>
+      .label {
+        color: gray;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/copylogo.png"
+              alt="SATGURU APPARELS"
+              class="img-thumbnail border border-0 img-thumbnail"
+            />
+          </a>
+          <button
+            class="navbar-toggler mr-3"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class=""></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="index.html"
+                  onclick="scrollToSection('Products')"
+                >
+                  Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="about.html"
+                  onclick="scrollToSection('Why')"
+                >
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://drive.google.com/drive/folders/1852-WJXz66NgzwksEmcLOeMkGDO5YEMe?usp=sharing"
+                >
+                  Gallery
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="enquire.html">Enquire</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- end header section -->
+    </div>
+    <!-- end hero area -->
+
+    <!-- enquire area -->
+
+    <!-- enquire area -->
+    <section class="enquire_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="enquire_form">
+              <h4>Enquire Now</h4>
+              <form id="enquiryForm">
+                <div class="form-group">
+                  <label for="name">Name *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    pattern="[0-9]{10}"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Requirements *</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Enter your requirements"
+                    required
+                  ></textarea>
+                </div>
+                <label class="label"
+                  >If possible mention product, number of pieces, preferred
+                  fabric, design, budget, and by when do you need it. If
+                  possible attach a reference image/design.</label
+                >
+
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="validateAndSubmit()"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function validateAndSubmit() {
+        // Validate Name
+        var nameInput = document.getElementById("name");
+        if (nameInput.value.length < 3) {
+          alert("Name should be at least 3 characters long.");
+          return;
+        }
+
+        // Validate Phone Number
+        var phoneInput = document.getElementById("phone");
+        if (!/^\d{10}$/.test(phoneInput.value)) {
+          alert("Please enter a valid 10-digit phone number.");
+          return;
+        }
+
+        // Validate Email
+        var emailInput = document.getElementById("email");
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
+          alert("Please enter a valid email address.");
+          return;
+        }
+
+        // If all validations pass, submit the form to the API endpoint
+        const name = encodeURIComponent(document.getElementById("name").value);
+        const email = encodeURIComponent(
+          document.getElementById("email").value
+        );
+        const phone = encodeURIComponent(
+          document.getElementById("phone").value
+        );
+        const message = encodeURIComponent(
+          document.getElementById("message").value
+        );
+
+        const formData = {
+          name: name,
+          email: email,
+          phone: phone,
+          message: message,
+        };
+
+        fetch(
+          "https://i1k5tvr794.execute-api.ap-south-1.amazonaws.com/test1/inquiry",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        )
+          .then((response) => {
+            // console.log("Response2:", response);
+            return response.json();
+          })
+          .then((data) => {
+            // console.log("API response:", data);
+            alert("Form submitted successfully!");
+          })
+          .catch((error) => {
+            console.error("Error submitting form  :", error);
+            alert("An error occurred. Please try again later.");
+          });
+      }
+    </script>
+
+    <section class="info_section layout_padding2-top">
+      <div class="social_container">
+        <div class="social_box">
+          <img src="images\copylogo.png" width="250px" alt="" />
+        </div>
+      </div>
+      <div class="info_container">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <h6>ABOUT US</h6>
+              <p class="data-p">
+                Experience hassle-free garment manufacturing with our low MOQ,
+                on-time delivery, competitive pricing, and 25+ years of industry
+                expertise.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="info_form">
+                <h5>Want Brochure?</h5>
+                <form
+                  action="#"
+                  method="post"
+                  onsubmit="sendBrochureRequest(); return false;"
+                >
+                  <input
+                    type="email"
+                    id="emailInput"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <button type="submit">Send Brochure</button>
+                </form>
+              </div>
+            </div>
+
+            <script>
+              function sendBrochureRequest() {
+                var email = document.getElementById("emailInput").value;
+
+                // Check if the email is valid (you might want to add more validation)
+                if (!validateEmail(email)) {
+                  alert("Please enter a valid email address.");
+                  return;
+                }
+
+                const formData = {
+                  email: email,
+                  name: "-",
+                  phone: "-",
+                  message: "Requested for brochure",
+                };
+
+                fetch(
+                  "https://i1k5tvr794.execute-api.ap-south-1.amazonaws.com/test1/inquiry",
+                  {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                  }
+                )
+                  .then((response) => {
+                    // console.log("Response2:", response);
+                    return response.json();
+                  })
+                  .then((data) => {
+                    // console.log("API response:", data);
+                    alert("Form submitted successfully!");
+                  })
+                  .catch((error) => {
+                    console.error("Error submitting form  :", error);
+                    alert("An error occurred. Please try again later.");
+                  });
+              }
+
+              function validateEmail(email) {
+                // Add your email validation logic here
+                // This is a basic example, you might want to use a regular expression or a library
+                return /\S+@\S+\.\S+/.test(email);
+              }
+            </script>
+            <div class="col-md-6 col-lg-3">
+              <h6>NEED HELP</h6>
+              <p class="data-p">
+                We are here to help you out with any queries you have. Get in
+                touch with us now.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h6>CONTACT US</h6>
+              <div class="info_link-box data-p">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span> 35th Rd, Khar West, Mumbai, 400050 </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span style="display: block">9821035278 / 8850322464</span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span> satguruapparels@gmail.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer section -->
+      <footer class="footer_section">
+        <div class="container">
+          <p>&copy; <span id="displayYear"></span> All Rights Reserved</p>
+        </div>
+      </footer>
+      <!-- footer section -->
+    </section>
+
+    <!-- enquire area end-->
+
+    <!-- enquire area end-->
+
+    <!-- info section -->
+
+    <!-- end info section -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

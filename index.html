@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WySTQT9KRQvT13w4+ojvTiB4ML2feTJFA"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images\PHOTOS-20240123T045342Z-001/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images\PHOTOS-20240123T045342Z-001/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images\PHOTOS-20240123T045342Z-001/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="images\PHOTOS-20240123T045342Z-001/site.webmanifest"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>SATGURU APPARELS - GARMENT MANUFACTURERS</title>
+
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle1.min.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <script>
+      function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+
+    <style>
+      .box img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      #carousel-container {
+        width: 100%; /* Adjust the width as needed */
+        overflow: hidden;
+        position: relative;
+        margin: auto; /* Center the carousel */
+      }
+
+      #image-carousel {
+        display: flex;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .carousel-image {
+        width: 33.33%; /* Show three images at the same time on larger screens */
+        height: auto;
+        object-fit: cover;
+        border: 10px solid white;
+      }
+
+      /* Media query for screens with a maximum width of 767 pixels (typical for mobile devices) */
+      @media (max-width: 767px) {
+        .carousel-image {
+          width: 100%; /* Set width to 100% on mobile devices */
+          height: auto;
+          object-fit: cover;
+          border: 10px solid white;
+        }
+      }
+
+      .background-img {
+        background: linear-gradient(
+          61deg,
+          hsl(182, 38%, 74%),
+          hsl(203, 82%, 42%)
+        );
+        background-size: cover;
+      }
+
+      .svg-container {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .customization-section {
+        flex: 1;
+      }
+
+      .svg1 {
+        width: 200px; /* Adjust the width as needed */
+        height: 200px; /* Adjust the height as needed */
+      }
+
+      .svg-box {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .svg-container {
+          display: none; /* Hide the entire container on mobile */
+        }
+      }
+
+      .text {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      .custom-slider-container {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* 75% of the viewport height for desktop */
+        max-height: 100vh; /* Maximum height for desktop */
+        overflow: hidden;
+      }
+
+      .custom-slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        height: 100%;
+      }
+
+      .custom-slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .custom-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .custom-slide-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .custom-h1 {
+        font-size: 4em;
+        margin-bottom: 10px;
+        color: white;
+        font-weight: bold;
+      }
+      .custom-p {
+        font-size: 1em;
+      }
+
+      @media (max-width: 768px) {
+        .custom-slider-container {
+          height: 100vh; /* 100% of the viewport height for mobile */
+        }
+      }
+
+      @media (max-width: 768px) {
+        .button-upper {
+          margin-top: -100px;
+        }
+        .hero_area {
+          padding: 0 0;
+        }
+        .custom-h1 {
+          font-size: 2em;
+          margin-bottom: 10px;
+          color: white;
+          font-style: bold;
+        }
+      }
+
+      .slider_text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- end header section -->
+    <!-- slider section -->
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/copylogo.png"
+              alt="SATGURU APPARELS"
+              class="img-thumbnail border border-0 img-thumbnail"
+            />
+          </a>
+          <button
+            class="navbar-toggler mr-3"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class=""></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="scrollToSection('Products')"
+                  href="#"
+                >
+                  Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" onclick=""> About </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://drive.google.com/drive/folders/1852-WJXz66NgzwksEmcLOeMkGDO5YEMe?usp=sharing"
+                >
+                  Gallery
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="enquire.html">Enquire</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- end header section -->
+    </div>
+
+    <!-- slider banner	 -->
+
+    <!-- end slider section -->
+
+    <!-- end hero area -->
+    <div>
+      <div class="custom-slider-container">
+        <div class="custom-slider">
+          <div class="custom-slide">
+            <img src="images/m1.avif" alt="Image 1" class="custom-img" />
+            <div class="custom-slide-content">
+              <div class="slider_text">
+                <h1 class="custom-h1">
+                  QUALITY GARMENT<br />
+                  MANUFACTURERS
+                </h1>
+                <br />
+                <p class="custom-p">
+                  WE ARE A GARMENT MANUFACTURING FIRM THAT <br />
+                  SPECIALIZES IN MANUFACTURING GARMENTS IN HOISERY
+                </p>
+                <a href="enquire.html"
+                  ><button type="button" class="btn btn-primary btn-lg">
+                    Enquire
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="custom-slide">
+            <img src="images/m2.jpg" alt="Image 2" class="custom-img" />
+            <div class="custom-slide-content">
+              <div class="slider_text">
+                <h1 class="custom-h1">
+                  QUALITY GARMENT <br />
+                  MANUFACTURERS
+                </h1>
+                <br />
+                <p class="custom-p">
+                  WE ARE A GARMENT MANUFACTURING FIRM THAT <br />
+                  SPECIALIZES IN MANUFACTURING GARMENTS IN HOISERY
+                </p>
+                <a href="enquire.html"
+                  ><button type="button" class="btn btn-primary btn-lg">
+                    Enquire
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="custom-slide">
+            <img
+              src="images/tshirt-printing.jpeg"
+              alt="Image 3"
+              class="custom-img"
+            />
+            <div class="custom-slide-content">
+              <div class="slider_text">
+                <h1 class="custom-h1">
+                  QUALITY GARMENT <br />
+                  MANUFACTURERS
+                </h1>
+                <br />
+                <p class="custom-p">
+                  WE ARE A GARMENT MANUFACTURING FIRM THAT <br />
+                  SPECIALIZES IN MANUFACTURING GARMENTS IN HOISERY
+                </p>
+                <a href="enquire.html"
+                  ><button type="button" class="btn btn-primary btn-lg">
+                    Enquire
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.querySelector(".custom-slider");
+        let isTransitioning = false;
+
+        function nextSlide() {
+          if (!isTransitioning) {
+            isTransitioning = true;
+
+            // Add a transitionend event listener to handle the transition completion
+            slider.addEventListener("transitionend", function transitionEnd() {
+              // Remove the event listener
+              slider.removeEventListener("transitionend", transitionEnd);
+
+              // Reset styles and transition properties
+              slider.style.transition = "none";
+              slider.style.transform = "translateX(0)";
+
+              // Move the first slide to the end
+              slider.appendChild(slider.firstElementChild);
+
+              // Force a reflow before reapplying the transition
+              void slider.offsetWidth;
+
+              // Reapply the transition
+              slider.style.transition = "transform 0.5s ease-in-out";
+
+              // Reset the flag
+              isTransitioning = false;
+            });
+
+            // Move to the next slide
+            slider.style.transform = "translateX(-100%)";
+          }
+        }
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+      });
+    </script>
+
+    <!-- Customization section -->
+    <div class="svg-box">
+      <div class="svg-container">
+        <svg
+          viewBox="0 0 800 800"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg1"
+        >
+          <g
+            fill="#abd5d3"
+            stroke="#178ecf"
+            stroke-width="8.5"
+            transform="scale(0.55)"
+            transform-origin="400"
+          >
+            <circle r="20" cx="710" cy="70" />
+            <circle fill="#D1ED5E" stroke="#AACF17" r="33" cx="300" cy="255" />
+            <circle stroke-width="44" r="125" cx="175" cy="455" />
+            <circle r="75" cx="500" cy="315" />
+            <circle r="90" cx="600" cy="615" />
+          </g>
+        </svg>
+      </div>
+
+      <section class="customization_section layout_padding2 bg-light">
+        <div class="container border rounded p-4 background-img">
+          <div class="heading_container heading_center">
+            <h2>Customize Your Style</h2>
+            <p class="mt-3">
+              Elevate your fashion with our personalized customization options.
+              At SATGURU APPARELS, we believe in giving you the freedom to
+              create a garment that reflects your unique style and personality.
+            </p>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <div class="feature-box">
+                <h3>Endless Color Combinations</h3>
+                <p>
+                  Choose from a wide range of color options to create the
+                  perfect palette for your garment. Mix and match to suit your
+                  taste.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-box">
+                <h3>Custom Prints</h3>
+                <p>
+                  Express yourself with custom prints and graphics. Whether it's
+                  a logo, pattern, or artwork, we bring your vision to life on
+                  your chosen garment.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-4">
+              <div class="feature-box">
+                <h3>Premium Fabrics</h3>
+                <p>
+                  Indulge in luxury with our selection of premium fabrics. From
+                  soft cotton to high-performance blends, choose the fabric that
+                  suits your comfort and style preferences.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-4">
+              <div class="feature-box">
+                <h3>Bespoke Styles</h3>
+                <p>
+                  Tailor your garment to your liking with our bespoke styles.
+                  Whether you prefer a classic fit, a modern cut, or something
+                  unique, we cater to your individual taste.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="svg-container">
+        <svg
+          viewBox="0 0 800 800"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg2"
+        >
+          <g
+            fill="#abd5d3"
+            stroke="#178ecf"
+            stroke-width="8.5"
+            transform="scale(0.55)"
+            transform-origin="400"
+          >
+            <circle r="20" cx="710" cy="70" />
+            <circle fill="#D1ED5E" stroke="#AACF17" r="33" cx="300" cy="255" />
+            <circle stroke-width="44" r="125" cx="175" cy="455" />
+            <circle r="75" cx="500" cy="315" />
+            <circle r="90" cx="600" cy="615" />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <!-- End Customization section -->
+
+    <!-- shop section -->
+
+    <section class="shop_section layout_padding" id="Products">
+      <div class="container background-section">
+        <div class="heading_container heading_center">
+          <h2>OUR PRODUCTS</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box">
+              <a href="t-shirt.html">
+                <div class="img-box">
+                  <img src="images/t-shirt.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h6 class="">T-Shirts</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box">
+              <a href="sweatshirt.html">
+                <div class="img-box">
+                  <img src="images\sweatshirt.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h6>Sweatshirts</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box">
+              <a href="jersey.html">
+                <div class="img-box">
+                  <img src="images\jersey.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h6>Jersey</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box">
+              <a href="jackets.html">
+                <div class="img-box">
+                  <img src="images\jacket.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h6>Jackets</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box">
+              <a href="joggers.html">
+                <div class="img-box">
+                  <img src="images\jogers.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h6>Joggers</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box">
+              <a href="shorts.html">
+                <div class="img-box">
+                  <img src="images\shorts.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h6>Shorts</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box">
+              <a href="accesories.html">
+                <div class="img-box">
+                  <img src="images\cap.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h6>Accessories</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box">
+              <a href="oversized.html">
+                <div class="img-box">
+                  <img src="images\OT.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h6 class="text-center">Oversized</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end shop section -->
+
+    <!-- saving section -->
+
+    <!-- why section -->
+    <div class="svg-box">
+      <div class="svg-container">
+        <svg
+          viewBox="0 0 800 800"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg2"
+        >
+          <g
+            fill="#abd5d3"
+            stroke="#178ecf"
+            stroke-width="8.5"
+            transform="scale(0.55)"
+            transform-origin="400"
+          >
+            <circle r="20" cx="710" cy="70" />
+            <circle fill="#D1ED5E" stroke="#AACF17" r="33" cx="300" cy="255" />
+            <circle stroke-width="44" r="125" cx="175" cy="455" />
+            <circle r="75" cx="500" cy="315" />
+            <circle r="90" cx="600" cy="615" />
+          </g>
+        </svg>
+      </div>
+
+      <section class="why_section layout_padding" id="Why">
+        <div class="container-box background-img">
+          <div class="container">
+            <div class="heading_container heading_center">
+              <h2>Why Shop With Us</h2>
+            </div>
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <div class="card text-center">
+                    <!-- <img src="image1.jpg" class="card-img-top mx-auto mt-3" alt="Image 1"> -->
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Low MOQ</h5>
+                      <p class="card-text">
+                        Get started easily with our low minimum order quantity,
+                        starting at just 30 pieces.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <div class="card text-center">
+                    <!-- <img src="image2.jpg" class="card-img-top mx-auto mt-3" alt="Image 2"> -->
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">
+                        On-Time Delivery
+                      </h5>
+                      <p class="card-text">
+                        Count on us for reliable and punctual delivery, ensuring
+                        your orders arrive on time.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <div class="card text-center">
+                    <!-- <img src="image3.jpg" class="card-img-top mx-auto mt-3" alt="Image 3"> -->
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">
+                        Value for Money
+                      </h5>
+                      <p class="card-text">
+                        Enjoy competitive pricing without compromising quality –
+                        a perfect blend of value and affordability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <div class="card text-center">
+                    <!-- <img src="image1.jpg" class="card-img-top mx-auto mt-3" alt="Image 1"> -->
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Experience</h5>
+                      <p class="card-text">
+                        Rely on our 25+ years of industry expertise for
+                        top-notch garment manufacturing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="svg-container">
+        <svg
+          viewBox="0 0 800 800"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg2"
+        >
+          <g
+            fill="#abd5d3"
+            stroke="#178ecf"
+            stroke-width="8.5"
+            transform="scale(0.55)"
+            transform-origin="400"
+          >
+            <circle r="20" cx="710" cy="70" />
+            <circle fill="#D1ED5E" stroke="#AACF17" r="33" cx="300" cy="255" />
+            <circle stroke-width="44" r="125" cx="175" cy="455" />
+            <circle r="75" cx="500" cy="315" />
+            <circle r="90" cx="600" cy="615" />
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="heading_container">
+        <h2 class="">Happy Customers</h2>
+      </div>
+      <br />
+      <div id="carousel-container">
+        <div id="image-carousel">
+          <img
+            src="images\Happy moments-20240124T121445Z-001\Happy moments\1.jpeg"
+            alt="Image 1"
+            class="carousel-image"
+          />
+          <img
+            src="images\Happy moments-20240124T121445Z-001\Happy moments\2.jpg"
+            alt="Image 2"
+            class="carousel-image"
+          />
+          <img
+            src="images\Happy moments-20240124T121445Z-001\Happy moments\4.jpg"
+            alt="Image 3"
+            class="carousel-image"
+          />
+          <img
+            src="images\Happy moments-20240124T121445Z-001\Happy moments\5.jpg"
+            alt="Image 4"
+            class="carousel-image"
+          />
+          <img
+            src="images\Happy moments-20240124T121445Z-001\Happy moments\6.jpg"
+            alt="Image 5"
+            class="carousel-image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const carousel = document.getElementById("image-carousel");
+      let currentIndex = 0;
+
+      function showImage(index) {
+        const containerWidth = carousel.offsetWidth;
+        const isMobile = window.innerWidth <= 767;
+        if (isMobile) {
+          const transformValue = -index * 100 + "%"; // Updated to move 100% for one image
+          carousel.style.transform = "translateX(" + transformValue + ")";
+        } else {
+          const transformValue = -index * (containerWidth / 3) + "px"; // Move one-third of the container's width on larger screens
+          carousel.style.transform = "translateX(" + transformValue + ")";
+        }
+      }
+
+      function nextImage() {
+        const isMobile = window.innerWidth <= 767;
+
+        if (isMobile) {
+          currentIndex = (currentIndex + 1) % 5; // Adjust the number of images as needed (5 in this case)
+        } else {
+          currentIndex = (currentIndex + 1) % 3; // Move one-third of the container's width on larger screens
+        }
+
+        showImage(currentIndex);
+      }
+
+      function adjustForScreenSize() {
+        const isMobile = window.innerWidth <= 767;
+
+        if (!isMobile) {
+          setInterval(nextImage, 4000); // Set the interval for automatic image change on larger screens
+        }
+      }
+
+      // Initial adjustment based on screen size
+      adjustForScreenSize();
+
+      // Adjust when the window is resized
+      window.addEventListener("resize", adjustForScreenSize);
+    </script>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- contact section -->
+
+    <section class="contact_section" id="Contact">
+      <div class="container px-0">
+        <div class="heading_container">
+          <h2 class="">Contact Us</h2>
+        </div>
+      </div>
+      <div class="container container-bg">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 px-0">
+            <div class="map_container">
+              <div class="map-responsive">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7722936.781266009!2d63.080296625!3d19.065266500000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b45e8876bb%3A0x50a1ac65cd232724!2sSatguru%20Apparels!5e0!3m2!1sen!2sin!4v1706367735496!5m2!1sen!2sin"
+                  width="600"
+                  height="300"
+                  frameborder="0"
+                  style="border: 0; width: 100%; height: 100%"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 px-5 text">
+            <!-- Use the "mail" input type for better compatibility -->
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <p>Do send us an enquire if you have any requirements.</p>
+            <a href="enquire.html"
+              ><button
+                type="button"
+                class="btn btn-primary btn-lg button-upper"
+              >
+                Enquire
+              </button></a
+            >
+            <br />
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function sendEmail() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+
+        const mailtoLink = `mailto:your_email@example.com?subject=New Contact Form Submission&body=Name: ${name}%0AEmail: ${email}%0APhone: ${phone}`;
+
+        window.location.href = mailtoLink;
+      }
+    </script>
+
+    <!-- end contact section -->
+
+    <div>
+      <br />
+      <br />
+    </div>
+
+    <!-- info section -->
+
+    <section class="info_section layout_padding2-top">
+      <div class="social_container">
+        <div class="social_box">
+          <img src="images\copylogo.png" width="250px" alt="" />
+        </div>
+      </div>
+      <div class="info_container">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <h6>ABOUT US</h6>
+              <p class="data-p">
+                Experience hassle-free garment manufacturing with our low MOQ,
+                on-time delivery, competitive pricing, and 25+ years of industry
+                expertise.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="info_form">
+                <h5>Want Brochure?</h5>
+                <form
+                  action="#"
+                  method="post"
+                  onsubmit="sendEmail(); return false;"
+                >
+                  <input
+                    type="email"
+                    id="emailInput"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <button type="submit">Send Brochure</button>
+                </form>
+              </div>
+            </div>
+
+            <script>
+              function sendEmail() {
+                var email = document.getElementById("emailInput").value;
+
+                // Check if the email is valid (you might want to add more validation)
+                if (!validateEmail(email)) {
+                  alert("Please enter a valid email address.");
+                  return;
+                }
+
+                var subject = encodeURIComponent("Send Brochure Request");
+                var body = encodeURIComponent(
+                  "Send Brochure request from: " + email
+                );
+
+                var mailtoLink =
+                  "mailto:satguruapparels@gmail.com?subject=" +
+                  subject +
+                  "&body=" +
+                  body;
+
+                // Open default email client
+                window.location.href = mailtoLink;
+              }
+
+              function validateEmail(email) {
+                // Add your email validation logic here
+                // This is a basic example, you might want to use a regular expression or a library
+                return /\S+@\S+\.\S+/.test(email);
+              }
+            </script>
+
+            <div class="col-md-6 col-lg-3">
+              <h6>NEED HELP</h6>
+              <p class="data-p">
+                We are here to help you out with any queries you have. Get in
+                touch with us now.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h6>CONTACT US</h6>
+              <div class="info_link-box data-p">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span class="span"> 35th Rd, Khar West, Mumbai, 400050 </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span style="display: block">9821035278 / 8850322464</span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span> satguruapparels@gmail.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer section -->
+      <footer class="footer_section">
+        <div class="container">
+          <p>&copy; <span id="displayYear"></span> All Rights Reserved</p>
+        </div>
+      </footer>
+      <!-- footer section -->
+    </section>
+
+    <!-- end info section -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-eQFp07ARJ2epP4snNpQ8EZMIsr0CmLaaJ66Y8LEdEwA8thUsqU4C8lif+5TzPS4t"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JS/swiper-bundle1.min.js"></script>
+  </body>
+</html>
